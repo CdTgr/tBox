@@ -77,6 +77,7 @@
     /*text-indent: 2rem;*/
     padding: 0.5rem;
     border-radius: inherit;
+    margin: 0;
 }
 .tBox-block.large > .tBox-label {
     min-width: 20rem;

@@ -199,7 +199,7 @@
                 {
                     var id = this.id === '' ? tBoxEvents.generateRandomId(10, 'tBox') : this.id;
                     var is_checkbox = this.multiple;
-                    var elem_name = this.name === '' ? this.name : tBoxEvents.generateRandomId(10, 'tBox');
+                    var elem_name = typeof this.name === 'string' && this.name != '' ? this.name : tBoxEvents.generateRandomId(10, 'tBox');
                     _options.element.find('option').each(function () {
                         temp_container.append([
                             '<input ',
@@ -298,7 +298,7 @@ $(document).ready(function () {
     $.fn.extend({
         tBox: function () {
             if (arguments[0] instanceof Object) return new tBox(this, arguments[0]);
-            return null;
+            else return new tBox(this, {});
         }
     });
 });
