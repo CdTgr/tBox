@@ -1,0 +1,18 @@
+.tBox-container,
+.tBox-block {
+    display: inline-block;
+}
+.tBox-container.full,
+.Box-block.full {
+    display: block;
+}
+.tBox-container > select,
+.tBox-container > .tBox-block > input[type="checkbox"],
+.tBox-container > .tBox-block > input[type="radio"] {
+    display: none;
+}
+.tBox-label {
+    position: relative;
+    display: block;
+    padding: 0.3rem 0.7rem;
+}
