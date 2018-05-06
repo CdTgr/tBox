@@ -74,7 +74,7 @@ $('#Radio-id-3').tBox(); // Third Radio only
 
 More options??
 
-Documentation [here](tBox)
+Documentation [here](https://adhi92.github.io/tBox)
 
 License
 ----
